@@ -1,0 +1,34 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.7;
+  padding: 30px;
+  color: $color-grey-dark;
+}
+
+.header__title--primary,
+.header__title--secondary {
+  color: $color-white;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+}
+
+.header__title--primary {
+  font-size: 6rem;
+  line-height: 8rem;
+  letter-spacing: 35px;
+  font-weight: 400;
+
+  animation: moveInLeft 1s ease-out;
+}
+
+.header__title--secondary {
+  font-size: 2rem;
+  line-height: 3rem;
+  letter-spacing: 17.5px;
+  font-weight: 700;
+  margin-bottom: 60px;
+
+  animation: moveInRight 1s ease-out;
+}
