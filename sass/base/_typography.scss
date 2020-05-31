@@ -7,33 +7,32 @@ body {
   color: $color-grey-dark;
 }
 
-.header__title--primary,
-.header__title--secondary {
+.heading-primary {
   color: $color-white;
   text-transform: uppercase;
   backface-visibility: hidden;
+
+  &--main {
+    font-size: 6rem;
+    line-height: 8rem;
+    letter-spacing: 35px;
+    font-weight: 400;
+
+    animation: moveInLeft 1s ease-out;
+  }
+
+  &--sub {
+    font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: 17.5px;
+    font-weight: 700;
+    margin-bottom: 60px;
+
+    animation: moveInRight 1s ease-out;
+  }
 }
 
-.header__title--primary {
-  font-size: 6rem;
-  line-height: 8rem;
-  letter-spacing: 35px;
-  font-weight: 400;
-
-  animation: moveInLeft 1s ease-out;
-}
-
-.header__title--secondary {
-  font-size: 2rem;
-  line-height: 3rem;
-  letter-spacing: 17.5px;
-  font-weight: 700;
-  margin-bottom: 60px;
-
-  animation: moveInRight 1s ease-out;
-}
-
-.section-about__title--primary {
+.heading-secondary {
   display: inline-block;
   font-size: 3.5rem;
   font-weight: 700;
@@ -55,15 +54,14 @@ body {
   }
 }
 
-.section-about__title--tertiary {
-  display: inline-block;
+.heading-tertiary {
   font-size: 1.6rem;
   line-height: 2.6rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.section-about__description {
+.paragraph {
   font-size: 1.6rem;
   line-height: 2.6rem;
 }
